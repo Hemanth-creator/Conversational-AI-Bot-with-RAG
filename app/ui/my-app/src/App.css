@@ -1,0 +1,190 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #121212;
+}
+
+.App-header {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  color: #f7f7f7;
+}
+
+.start-button,
+.stop-button {
+  padding: 30px 50px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s;
+}
+
+.start-button {
+  background-color: white ;
+  /* Neon green */
+  color: #000000;
+}
+.start-button:hover {
+  background-color: #979997;
+  /* Darker green on hover */
+}
+
+.stop-button {
+  background-color: #ff0000;
+  /* Neon red */
+  color: #fff;
+}
+
+.stop-button:hover {
+  background-color: #cc0000;
+  /* Darker red on hover */
+}
+
+.listening-animation {
+  color: #fff200;
+  /* Neon cyan */
+  font-size: 1.5rem;
+  font-family: 'Orbitron', sans-serif;
+  text-shadow:
+    0 0 5px #fff200,
+    0 0 10px #fff200,
+    0 0 15px #fff200;
+}
+
+.transcript {
+  color: #f7f7f7;
+  font-size: 1.2rem;
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px;
+}
+
+.listening-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.listen-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.listening-animation {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}
+
+.circle {
+  border: #ececec;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: rgba(255, 252, 72, 0.5);
+  transform: translate(-50%, -50%);
+  animation: pulse 2s infinite;
+  opacity: 0;
+}
+
+.circle1 {
+  animation-delay: 0s;
+}
+
+.circle2 {
+  animation-delay: 0.5s;
+}
+
+.circle3 {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+.listening-animation.active .circle {
+  animation: pulse 2s infinite;
+}
+
+p{
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+
+/* loading dots */
+.loading-dots {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.loading-dots span {
+  animation: blink 1.4s infinite both;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+
+/* streaming response */
+.response{
+  color: white;
+}

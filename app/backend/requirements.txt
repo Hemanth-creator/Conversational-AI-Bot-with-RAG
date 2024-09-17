@@ -1,0 +1,10 @@
+langchain_google_genai
+google-generativeai
+python-dotenv
+langchain_community
+langchain_text_splitters
+langchain_core
+fastapi
+uvicorn
+pypdf
+faiss-cpu
