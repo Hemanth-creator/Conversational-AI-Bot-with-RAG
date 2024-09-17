@@ -89,7 +89,7 @@ function App() {
         headers: {
           'Accept': 'audio/mpeg',
           'Content-Type': 'application/json',
-          'xi-api-key': 'sk_691174f9a65fa9b08c8b235847c12332faadca3624792a9a'
+          'xi-api-key': 'sk_6**************************************892a9a'
         },
         responseType: 'blob' // Ensure that the response is in blob format for audio
       });

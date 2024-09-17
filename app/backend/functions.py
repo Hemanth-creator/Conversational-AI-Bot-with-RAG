@@ -15,7 +15,7 @@ from langchain_core.runnables import RunnablePassthrough
 import re
 def initiate_model():
     load_dotenv()
-    os.environ["GOOGLE_API_KEY"] ="AIzaSyAwboLsOo7DqqyVOMgySNUGoyjF-cus_NE"
+    os.environ["GOOGLE_API_KEY"] ="AIz************-cus_NE"
     os.getenv("GOOGLE_API_KEY")
     genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
